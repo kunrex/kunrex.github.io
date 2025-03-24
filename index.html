@@ -8,7 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <div class="header">
+  <nav class="navbar">
+    <div class="navbar_container">
+      <a href="#hey_there">Hey There!</a>
+      <a href="#current_projects">Current Projects</a>
+      <a href="#other_projects">Other Projects</a>
+      <a href="#contact_me">Contact Me</a>
+    </div>
+  </nav>
+  <div id="hey_there" class="header">
     <img class="heart" src="images/heart.png"  alt="https://github.com/kunrex/kunrex/blob/main/Images/heart.png">
     <div>
       <h1>
@@ -27,7 +35,7 @@
       </h3>
     </div>
   </div>
-  <div class="main">
+  <div id="main" class="main">
     <img class="main_img_container" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kunrex&layout=compact&theme=vision-friendly-dark" alt="">
     <div class="main_content">
       <h1>
@@ -47,7 +55,7 @@
       </h2>
     </div>
   </div>
-  <div class="projects">
+  <div id="current_projects" class="projects">
     <div class="current_projects">
       <h1>
         Current Projects
@@ -82,7 +90,7 @@
         </div>
       </div>
     </div>
-    <div class="other_projects">
+    <div id="other_projects" class="other_projects">
       <div class="row">
         <div class="small_card">
           <div class="small_card_logo">
@@ -174,7 +182,6 @@
           </div>
         </div>
       </div>
-
       <div class="row">
         <div class="small_card">
           <div class="small_card_logo">
@@ -302,31 +309,42 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="row contact_me">
-    <div class="contact_text">
-      <h1 style="color: white">
-        Contact Me
+    <div id="drawings">
+      <h1>
+        Sometimes I draw :D
       </h1>
-    </div>
-    <div class="row">
-      <div class="contact">
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
+      <div class="drawings">
+        <img src="drawings/4.jpeg" alt="4">
+        <img src="drawings/2.jpeg" alt="2">
+        <img src="drawings/1.jpeg" alt="1">
+        <img src="drawings/3.jpeg" alt="3">
+        <img src="drawings/5.jpeg" alt="5">
+        <img src="drawings/6.jpeg" alt="6">
       </div>
     </div>
-    <div class="contact_icons">
-      <img onclick="window.open('mailto:kunal22102005@gmail.com', '_blank')" src="icons/gmail.svg" alt="Github">
-      <img onclick="window.open('https://github.com/kunrex', '_blank')" src="icons/github.png" alt="Github">
-      <img onclick="window.open('https://www.reddit.com/user/Kunrex120/', '_blank')" src="icons/reddit.webp" alt="Reddit">
-      <img onclick="window.open('https://www.instagram.com/kunrex.cs/', '_blank')" src="icons/instagram.png" alt="Instagram">
+  </div>
+  <div id="contact_me" class="row contact_me">
+    <div class="contact">
+      <div class="contact_text">
+        <h1>
+          Contact Me
+        </h1>
+      </div>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="contact_icons">
+        <img onclick="window.open('mailto:kunal22102005@gmail.com', '_blank')" src="icons/gmail.svg" alt="Github">
+        <img onclick="window.open('https://github.com/kunrex', '_blank')" src="icons/github.png" alt="Github">
+        <img onclick="window.open('https://www.reddit.com/user/Kunrex120/', '_blank')" src="icons/reddit.webp" alt="Reddit">
+        <img onclick="window.open('https://www.instagram.com/kunrex.cs/', '_blank')" src="icons/instagram.png" alt="Instagram">
+      </div>
     </div>
   </div>
   <div class="footer">
