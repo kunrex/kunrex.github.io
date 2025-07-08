@@ -1,0 +1,236 @@
+{
+  "technologies" : [
+    "csharp", "cpp", "js", "ts", "python", "hlsl", "sql", "unity", "angular", "ionic", "express", "tensorflow", "pytorch", "arduino", "esp"
+  ],
+
+  "projects" : [
+    {
+      "title": "Pepper.bot",
+      "content": "Just a discord bot I wrote. Includes modules for music, image manipulation, chatting, games, reddit, and even a currency system.",
+      "stack": [
+        "csharp",
+        "sql"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/Pepper.bot"
+      }
+    },
+    {
+      "title": "Treasure of the Deep",
+      "content": "Submission to Ludum Dare 2021.",
+      "stack": [
+        "csharp",
+        "unity"
+      ],
+      "link": {
+        "icon": "itch",
+        "url": "https://kunrex.itch.io/treasure-of-the-deep"
+      }
+    },
+    {
+      "title": "Heistin' n' Hacking",
+      "content": "Submission to Brackeys Game Jam 2021.1.",
+      "stack": [
+        "csharp",
+        "unity"
+      ],
+      "link": {
+        "icon": "itch",
+        "url": "https://kunrex.itch.io/heistin-n-hacking"
+      }
+    },
+    {
+      "title": "Crashdom",
+      "content": "Submission to Brackeys Game Jam 2021.2.",
+      "stack": [
+        "csharp",
+        "unity"
+      ],
+      "link": {
+        "icon": "itch",
+        "url": "https://kunrex.itch.io/crashdom"
+      }
+    },
+    {
+      "title": "neural.net",
+      "content": "I wrote a neural network from scratch and trained it to classify numbers!",
+      "stack": [
+        "python"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/neural.net"
+      }
+    },
+    {
+      "title": "Scribie.app",
+      "content": "A voice recording and transcription app I made for an internship under Scribie.",
+      "stack": [
+        "ts",
+        "ionic",
+        "angular"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/Scribie.app"
+      }
+    },
+    {
+      "title": "ard.blaster",
+      "content": "I put an arduino on a nerf gun! It allows me to control fire rate and fire modes (single, burst and full auto).",
+      "stack": [
+        "cpp",
+        "arduino"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/ard.blaster"
+      }
+    },
+    {
+      "title": "llm.net",
+      "content": "I tried to implement the basics of an LLM using pytorch.",
+      "stack": [
+        "python",
+        "pytorch"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/llm.net"
+      }
+    },
+    {
+      "title": "Stratopreter",
+      "content": "A circuit simulator in Unity that includes the basic logic gates, the ability to make prefabs, programmable gates, and a fine tuned AI assistant powered by gemini!",
+      "stack": [
+        "csharp",
+        "unity"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/IshaanXCoder/SyntaxError-Team-Strato/tree/main/Unity"
+      }
+    },
+    {
+      "title": "input.cv",
+      "content": "A python package that translates trainable hand gestures into usable input data.",
+      "stack": [
+        "python",
+        "tensorflow"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/input.cv"
+      }
+    },
+    {
+      "title": "Rush",
+      "content": "A simple interpreter I made in roughly 2 hours and 8 minutes, inspired of a Kata from CodeWars.",
+      "stack": [
+        "csharp"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/Rush"
+      }
+    },
+    {
+      "title": "CouchHost",
+      "content": "A Unity package that makes local couch multiplayer simpler for any game. It pairs with a controller app, developed by me, allowing players to join in using their mobiles!",
+      "stack": [
+        "csharp",
+        "unity"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/CouchHost.unity"
+      }
+    },
+    {
+      "title": "controller.ionic",
+      "content": "A controller app that pairs with a Unity package to make couch multiplayer simpler than ever.",
+      "stack": [
+        "ts",
+        "ionic",
+        "angular"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/controller.ionic"
+      }
+    },
+    {
+      "title": "S2D",
+      "content": "Backend application for a hackathon in college.",
+      "stack": [
+        "csharp",
+        "sql"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/Stack2Deep.data"
+      }
+    },
+    {
+      "title": "Pokevanilla",
+      "content": "An online single player pokemon game written in vanilla js, inspired by DelugeRPG.",
+      "stack": [
+        "js"
+      ],
+      "link": {
+        "icon": "pokemon",
+        "url": "https://pokevanilla.vercel.app/"
+      }
+    },
+    {
+      "title": "Food Ordering System",
+      "content": "Food ordering system created for submission to a backend assignment.",
+      "stack": [
+        "js",
+        "sql",
+        "express"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/backend"
+      }
+    },
+    {
+      "title": "Sugar.Lang",
+      "content": "A (transpiled) compiled cross platform programming language I wrote.",
+      "stack": [
+        "cpp"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/Sugar.Lang"
+      }
+    },
+    {
+      "title": "drone.esp",
+      "content": "A drone I'm trying to fix.",
+      "stack": [
+        "cpp",
+        "esp"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/drone.esp"
+      }
+    },
+    {
+      "title": "Rays",
+      "content": "Shader projects in Unity. Includes my attempts at ray marching, slime simulations and more!",
+      "stack": [
+        "csharp",
+        "unity",
+        "hlsl"
+      ],
+      "link": {
+        "icon": "github",
+        "url": "https://github.com/kunrex/Rays"
+      }
+    }
+  ]
+}
