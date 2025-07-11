@@ -1,6 +1,105 @@
 {
-  "technologies" : [
-    "csharp", "cpp", "js", "ts", "python", "hlsl", "sql", "unity", "angular", "ionic", "express", "tensorflow", "pytorch", "arduino", "esp"
+  "types": [
+    {
+      "title": "Languages",
+      "id": "language"
+    },
+    {
+      "title": "Frameworks and Libraries",
+      "id": "framework"
+    },
+    {
+      "title": "Platforms",
+      "id": "platform"
+    }
+  ],
+
+  "technologies": [
+    {
+      "title": "C#",
+      "id": "csharp",
+      "type": "language"
+    },
+    {
+      "title": "C++",
+      "id": "cpp",
+      "type": "language"
+    },
+    {
+      "title": "JavaScript",
+      "id": "js",
+      "type": "language"
+    },
+    {
+      "title": "TypeScript",
+      "id": "ts",
+      "type": "language"
+    },
+    {
+      "title": "Python",
+      "id": "python",
+      "type": "language"
+    },
+    {
+      "title": "HLSL",
+      "id": "hlsl",
+      "type": "language"
+    },
+    {
+      "title": "SQL",
+      "id": "sql",
+      "type": "language"
+    },
+    {
+      "title": "HTML",
+      "id": "html",
+      "type": "language"
+    },
+    {
+      "title": "CSS",
+      "id": "css",
+      "type": "language"
+    },
+    {
+      "title": "Unity",
+      "id": "unity",
+      "type": "platform"
+    },
+    {
+      "title": "Angular",
+      "id": "angular",
+      "type": "framework"
+    },
+    {
+      "title": "Ionic",
+      "id": "ionic",
+      "type": "framework"
+    },
+    {
+      "title": "ExpressJS",
+      "id": "express",
+      "type": "framework"
+    },
+    {
+      "title": "TensorFlow",
+      "id": "tensorflow",
+      "type": "framework"
+    },
+    {
+      "title": "PyTorch",
+      "id": "pytorch",
+      "type": "framework"
+    },
+    {
+      "title": "Arduino",
+      "id": "arduino",
+      "type": "platform"
+    },
+    {
+      "title": "Esp",
+      "id": "esp",
+      "type": "platform"
+    }
   ],
 
   "projects" : [

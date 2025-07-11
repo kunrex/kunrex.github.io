@@ -8,147 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-    <script src="index.js" type="module" defer></script>
+    <script src="scripts/index.js" type="module" defer></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div id="main" class="row">
-    <div class="col header justify-evenly">
-        <h1>
-            Hi! I'm Kunal.
-        </h1>
-        <div class="row">
-            <div id="about-me-scroll" class="overflow-y">
-                <div class="col">
-                    <div class="header-section">
-                        <h2>
-                            I'm an <span class="text-gradient-1">undergrad student</span> at from Bengaluru, India who loves to <span class="text-gradient-2">code!</span>
-                        </h2>
-                        <h3>
-                            I'm currently pursuing my <span class="text-gradient-1">bachelors degree</span> in Engineering Physics from <span class="text-gradient-2">IIT Roorkee, India</span>.
-                        </h3>
-                    </div>
-                    <div class="header-section">
-                        <div class="header-card">
-                            <div class="header-card-title">
-                                <h2>
-                                    About Me
-                                </h2>
-                            </div>
-                            <div class="col">
-                                <div class="header-card-content col">
-                                    <span>
-                                        Hello there! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="20px"/>
-                                    </span>
-                                     I'm a student, developer, (kinda sorta) artist, and if its relevant I played field hockey for 5 years and learnt to play the tabla for 7.
-                                </div>
-                                <div id="heart-parent" class="row align-center justify-evenly">
-                                    <strong><span class="text-gradient-1">Complimentary doggo pic ❤️</span></strong>
-                                    <div id="heart">
-                                        <img src="assets/heart.png" alt="https://github.com/kunrex/kunrex/blob/main/Images/heart.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header-section">
-                        <div class="header-card">
-                            <div class="header-card-title">
-                                <h2>
-                                    Developing
-                                </h2>
-                            </div>
-                            <div class="header-card-content">
-                                I started programming in 2018 (I think) with Java (super basic stuff)
-                                <br>
-                                I love trying out new technologies and especially building up from scratch.
-                                <br>
-                                While around half of my journey has been <span class="text-gradient-2">game development with Unity</span>, over the years I've written <span class="text-gradient-2">discord bots, apps, websites, compilers (and interpreters), and even played around with mechatronics.
-                                <br>
-                                There's also a few AI ML projects here and there ;D</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col justify-center align-center">
-                <div id="theres-more">
-                    Theres More!
-                </div>
-            </div>
-        </div>
-        <div class="col justify-evenly index">
-            <button data-id="projects">
-                Projects
-            </button>
-            <button data-id="artworks">
-                Artwork
-            </button>
-            <button data-id="a-little-something">
-                A little something ❤️
-            </button>
-        </div>
+<div id="index-parent" class="flex justify-center align-center">
+    <div id="index" class="col justify-evenly">
+        <i data-id="welcome" class="fa-solid fa-igloo"></i>
+        <i data-id="projects" class="fa-solid fa-terminal"></i>
+        <i data-id="artworks" class="fa-solid fa-palette"></i>
+        <i data-id="a-little-something" class="fa-solid fa-heart"></i>
     </div>
-    <div class="col content justify-center">
-        <div id="content-scroll">
-            <div id="projects" class="col">
-                <div id="tech-choose" class="col">
-                    <h2>
-                        Choose a technology!
-                    </h2>
-                    <div id="tech-index" class="row overflow-x no-wrap tech-stack"></div>
-                </div>
-                <div id="project-timeline" class="col overflow-x justify-center">
-                    <div class="row project-row"></div>
-                    <div class="timeline">
-                        <div class="timeline-line">
-                            <div class="timeline-now"></div>
-                        </div>
-                    </div>
-                    <div class="row project-row"></div>
-                </div>
-            </div>
-            <div id="artworks">
-                <div id="drawings">
-                    <h2>
-                        Drawings
-                        <button class="icon-switch">
-                            <i class="fa-solid fa-play"></i>
-                            <i class="fa-solid fa-pause"></i>
-                        </button>
-                    </h2>
-                    <div class="gallery-border">
-                        <div id="drawings-content" class="gallery row"></div>
-                    </div>
-                </div>
-                <div id="photography">
-                    <h2>
-                        Photography
-                        <button class="icon-switch">
-                            <i class="fa-solid fa-play"></i>
-                            <i class="fa-solid fa-pause"></i>
-                        </button>
-                    </h2>
-                    <div class="gallery-border">
-                        <div id="photography-content" class="gallery row"></div>
-                    </div>
-                </div>
-            </div>
-            <div id="a-little-something" class="col justify-evenly align-center">
-                <div class="margin">
-                    <h2>
-                        Enjoy this <span class="text-gradient-1">slime simulation</span> I worked on a while back!
-                    </h2>
-                </div>
-                <video controls height="80%">
-                    <source src="assets/timelapse.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div id="contact-icons">
+</div>
+<div id="contact-me-parent" class="row justify-evenly align-center">
+    <div id="contact-me" class="row justify-evenly align-center">
+        <div id="contact-icons" class="row justify-evenly">
             <img onclick="window.open('mailto:kunal22102005@gmail.com', '_blank')" src="assets/icons/gmail.png" alt="Github">
             <img onclick="window.open('https://github.com/kunrex', '_blank')" src="assets/icons/github.png" alt="Github">
             <img onclick="window.open('https://www.reddit.com/user/Kunrex120/', '_blank')" src="assets/icons/reddit.png" alt="Reddit">
@@ -163,6 +38,98 @@
                 <i class="fa-solid fa-sun"></i>
                 <i class="fa-solid fa-moon"></i>
             </button>
+        </div>
+    </div>
+</div>
+<div class="stars" id="stars-small"></div>
+<div class="stars" id="stars-medium"></div>
+<div class="stars" id="stars-far"></div>
+<div id="main">
+    <div id="main-scroll" class="overflow-y">
+        <div id="welcome">
+            <div class="col justify-center align-center w-100 h-100">
+                <div id="welcome-body" class="col">
+                    <div class="w-100">
+                        <h1>
+                            Hi I'm <span>Kunal.</span> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="50px"/>
+                        </h1>
+                    </div>
+                    <div class="row justify-evenly align-center">
+                        <div id="introduction" class="col justify-evenly">
+                            <h2>
+                                I'm a <span class="text-gradient-1">student</span> from Bengaluru, India who loves to <span class="text-gradient-2">code!</span>
+                            </h2>
+                            <h3>
+                                I'm currently pursuing my <span class="text-gradient-1">bachelors degree</span> in Engineering Physics from <span id="college" class="text-gradient-2"><a href="https://www.iitr.ac.in/" target="_blank">IIT Roorkee, India</a></span>.
+                            </h3>
+                        </div>
+                        <div id="heart">
+                            <img src="assets/heart.png" alt="https://github.com/kunrex/kunrex/blob/main/Images/heart.png">
+                        </div>
+                    </div>
+                    <div id="welcome-options" class="overflow-x no-wrap">
+                        <h3 id="about-me">
+                            <span class="text-gradient-2"><i class="fa-solid fa-angle-right"></i> About Me</span>
+                        </h3>
+                    </div>
+                    <div class="row justify-center">
+                        <span id="more-to-scroll">Theres more down there!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="col">
+            <div id="tech-choose" class="col">
+                <h2>
+                    Toggle Technologies! <span id="refresh-timeline" class="text-gradient-2"><i class="fa-solid fa-rotate-right"></i></span>
+                </h2>
+                <div id="tech-index" class="row justify-center overflow-x no-wrap tech-stack"></div>
+            </div>
+            <div id="project-timeline" class="overflow-x">
+                <div class="project-row"></div>
+            </div>
+        </div>
+        <div id="artworks">
+            <div id="drawings">
+                <div class="gallery-heading">
+                    <h2>
+                        Drawings
+                        <button class="icon-switch">
+                            <i class="fa-solid fa-play" style="display: none"></i>
+                            <i class="fa-solid fa-pause" style="display: none"></i>
+                            <i class="fa-solid fa-spinner spin"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div class="gallery-border">
+                    <div id="drawings-content" class="gallery row"></div>
+                </div>
+            </div>
+            <div id="photography">
+                <div class="gallery-heading">
+                    <h2>
+                        Photography
+                        <button class="icon-switch">
+                            <i class="fa-solid fa-play" style="display: none"></i>
+                            <i class="fa-solid fa-pause" style="display: none"></i>
+                            <i class="fa-solid fa-spinner spin"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div class="gallery-border">
+                    <div id="photography-content" class="gallery row"></div>
+                </div>
+            </div>
+        </div>
+        <div id="a-little-something" class="col justify-evenly align-center">
+            <div class="margin">
+                <h2>
+                    Enjoy this <span class="text-gradient-1">slime simulation</span> I worked on a while back!
+                </h2>
+            </div>
+            <video controls height="80%">
+                <source src="assets/timelapse.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
 </div>
