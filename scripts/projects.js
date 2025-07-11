@@ -19,8 +19,15 @@ const displayNone = 'none'
 const displayFlex = 'flex'
 
 function reloadTimeline() {
+    let index = 0
     for(let i = 0; i < projectCards.length; i++) {
         const card = projectCards[i]
+
+        card.card.style.display = displayNone
+        card.card.children[0].style.animationDelay = ''
+        card.card.children[0].classList.remove('project-card-animate')
+
+        void card.card.children[0].offsetWidth;
 
         let disable = true
         for(let j = 0; j < selectedTechnologies.length; j++)
@@ -29,7 +36,12 @@ function reloadTimeline() {
                 break
             }
 
-        card.card.style.display = disable ? displayNone : displayFlex
+        if(disable)
+            continue
+
+        card.card.style.display = displayFlex
+        card.card.children[0].classList.add('project-card-animate')
+        card.card.children[0].style.animationDelay = `${.3 * index++}s`
     }
 }
 

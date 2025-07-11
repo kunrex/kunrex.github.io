@@ -272,6 +272,8 @@ h1 span {
     width: 13%;
     height: .1rem;
 
+    content: '';
+
     border-radius: 0 .1rem .1rem 0;
 
     background:linear-gradient(to right, violet, cornflowerblue);
@@ -452,6 +454,16 @@ h1 span {
     opacity: .5;
 }
 
+#refresh-timeline {
+    transition: all .3s ease;
+}
+
+#refresh-timeline:hover {
+    transform: scale(1.1);
+
+    cursor: pointer;
+}
+
 #project-timeline {
     width: 100%;
     height: auto;
@@ -467,6 +479,15 @@ h1 span {
 
     margin-left: 8rem;
     margin-right: 8rem;
+}
+
+.project-card-animate {
+    opacity: 0;
+    animation: slideRight .3s linear forwards;
+}
+
+.project-card-animate::after {
+    animation: timelineLoad .3s linear forwards;
 }
 
 .project-card h3 {
@@ -513,8 +534,6 @@ h1 span {
     height: .15rem;
 
     background-color: white;
-
-    animation: timelineLoad .3s linear forwards;
 }
 
 .project-top::after {
@@ -528,8 +547,6 @@ h1 span {
     height: .15rem;
 
     background-color: white;
-
-    animation: timelineLoad .3s linear forwards;
 }
 
 @keyframes timelineLoad {
