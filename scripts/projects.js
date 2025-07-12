@@ -18,7 +18,15 @@ let selectedTechnologies = []
 const displayNone = 'none'
 const displayFlex = 'flex'
 
+const noneSelected = document.getElementById('none-selected')
+const resetButton = document.getElementById('refresh-timeline')
+
 function reloadTimeline() {
+    if (resetButton.dataset.disabled === 'true')
+        return
+
+    noneSelected.style.display = 'none'
+
     let index = 0
     for(let i = 0; i < projectCards.length; i++) {
         const card = projectCards[i]
@@ -43,6 +51,11 @@ function reloadTimeline() {
         card.card.children[0].classList.add('project-card-animate')
         card.card.children[0].style.animationDelay = `${.3 * index++}s`
     }
+
+    if(index === 0)
+        noneSelected.style.display = 'flex'
+
+    resetButton.dataset.disabled = 'true'
 }
 
 function filter(stack) {
@@ -51,6 +64,8 @@ function filter(stack) {
         selectedTechnologies.splice(index, 1)
     else
         selectedTechnologies.push(stack)
+
+    resetButton.dataset.disabled = 'false'
 }
 
 function createCategory(title) {
@@ -224,12 +239,12 @@ async function initProjects() {
         row.appendChild(card)
     }
 
-    const resetButton = document.getElementById('refresh-timeline')
     resetButton.onclick = () => {
         reloadTimeline()
     }
 
     reloadTimeline()
+    resetButton.dataset.disabled = 'true'
 }
 
 export function initIndex() {
