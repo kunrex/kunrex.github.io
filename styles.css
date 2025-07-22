@@ -79,11 +79,12 @@
 
 body {
     font-family: 'Inter', sans-serif;
+
     line-height: 1.6;
     scroll-behavior: smooth;
 
-    background-color: var(--background-color);
     color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 .row {
@@ -94,10 +95,6 @@ body {
 .col {
     display: flex;
     flex-direction: column;
-}
-
-.flex {
-    display: flex;
 }
 
 .align-center {
@@ -116,10 +113,6 @@ body {
     text-align: center;
 }
 
-.no-wrap {
-    text-wrap: nowrap;
-}
-
 .overflow-x {
     overflow-x: scroll;
 }
@@ -136,9 +129,17 @@ body {
     height: 100%;
 }
 
-#main {
+.w-vw {
     width: 100vw;
+}
+
+.h-vw {
+    height: 100vh;
     height: 100svh;
+}
+
+.front {
+    z-index: 1000000000;
 }
 
 #main-scroll {
@@ -181,7 +182,7 @@ body {
     animation: starsParallax 50s linear infinite;
 }
 
-#stars-far {
+#stars-large {
     width: 3px;
     height: 3px;
     animation: starsParallax 100s linear infinite;
@@ -208,6 +209,15 @@ body {
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.border-secondary {
+    border-radius: 1rem;
+    border: 0.1rem solid var(--secondary-color);
+}
+
+.background-blur {
+    backdrop-filter: blur(10px);
 }
 
 #welcome-body {
@@ -728,21 +738,14 @@ video {
 
     width: auto;
     height: 100svh;
-
-    z-index: 1000000000;
 }
 
 #index {
-    margin-left: 1rem;
+    margin: 0 0 0 1rem;
 
     gap: .5rem;
 
     font-size: 1.6rem;
-
-    border-radius: 1rem;
-    border: 0.1rem solid var(--secondary-color);
-
-    backdrop-filter: blur(10px);
 }
 
 #index i {
@@ -816,19 +819,12 @@ video {
 
     width: auto;
     height: 100svh;
-
-    z-index: 1000000000;
 }
 
 #contact-me {
     margin-right: 1rem;
 
     gap: 3rem;
-
-    border-radius: 1rem;
-    border: 0.1rem solid var(--secondary-color);
-
-    backdrop-filter: blur(10px);
 }
 
 #contact-me h4 {
@@ -868,4 +864,29 @@ video {
 #contact-icons img:hover, .project-link:hover {
     scale: 1.2;
     cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .row-med {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col-med {
+        display:  flex;
+        flex-direction: column;
+    }
+
+    #index-parent {
+        top: 0;
+        left: 0;
+        position: fixed;
+
+        width: 100vw;
+        height: auto;
+    }
+
+    #index {
+        margin: 1rem 0 0;
+    }
 }

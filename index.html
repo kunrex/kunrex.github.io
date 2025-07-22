@@ -13,16 +13,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div id="index-parent" class="flex justify-center align-center">
-    <div id="index" class="col justify-evenly">
+<div id="index-parent" class="col row-med justify-center front">
+    <div id="index" class="col row-med justify-evenly border-secondary background-blur">
         <i data-id="welcome" class="fa-solid fa-igloo"></i>
         <i data-id="projects" class="fa-solid fa-terminal"></i>
         <i data-id="artworks" class="fa-solid fa-palette"></i>
         <i data-id="a-little-something" class="fa-solid fa-heart"></i>
     </div>
 </div>
-<div id="contact-me-parent" class="row justify-evenly align-center">
-    <div id="contact-me" class="row justify-evenly align-center">
+<div id="contact-me-parent" class="row justify-evenly align-center front">
+    <div id="contact-me" class="row col-med justify-evenly align-center border-secondary background-blur">
         <div id="contact-icons" class="row justify-evenly">
             <img onclick="window.open('mailto:kunal22102005@gmail.com', '_blank')" src="assets/icons/gmail.png" alt="Github">
             <img onclick="window.open('https://github.com/kunrex', '_blank')" src="assets/icons/github.png" alt="Github">
@@ -43,8 +43,8 @@
 </div>
 <div class="stars" id="stars-small"></div>
 <div class="stars" id="stars-medium"></div>
-<div class="stars" id="stars-far"></div>
-<div id="main">
+<div class="stars" id="stars-large"></div>
+<div class="h-vw w-vw">
     <div id="main-scroll" class="overflow-y">
         <div id="welcome">
             <div class="col justify-center align-center w-100 h-100">
@@ -67,7 +67,7 @@
                             <img src="assets/heart.png" alt="https://github.com/kunrex/kunrex/blob/main/Images/heart.png">
                         </div>
                     </div>
-                    <div id="welcome-options" class="overflow-x no-wrap">
+                    <div id="welcome-options" class="overflow-x">
                         <h3 id="about-me">
                             <span class="text-gradient-2"><i class="fa-solid fa-angle-right"></i> About Me</span>
                         </h3>
@@ -83,7 +83,7 @@
                 <h2>
                     Toggle Technologies! <span id="refresh-timeline"><i class="fa-solid fa-rotate-right"></i></span>
                 </h2>
-                <div id="tech-index" class="row justify-center overflow-x no-wrap tech-stack"></div>
+                <div id="tech-index" class="row justify-center overflow-x tech-stack"></div>
             </div>
             <div id="none-selected" class="col justify-center">
                 <h2>
