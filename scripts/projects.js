@@ -1,4 +1,4 @@
-const data = await (await fetch('assets/data.json')).json()
+const data = await (await fetch('./assets/data.json')).json()
 
 export function loadImage(img, src) {
     return new Promise((resolve, reject) => {
