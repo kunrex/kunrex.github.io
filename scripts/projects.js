@@ -115,6 +115,7 @@ function createTechnologyOption(id, title) {
 
     element.dataset.selected = 'false'
 
+    filter(id)
     element.onclick = () => {
         filter(id)
         element.dataset.selected = element.dataset.selected === 'true' ? 'false' : 'true'
