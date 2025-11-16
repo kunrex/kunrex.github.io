@@ -113,7 +113,7 @@ function createTechnologyOption(id, title) {
 
     element.innerHTML = title
 
-    element.dataset.selected = 'false'
+    element.dataset.selected = 'true'
 
     filter(id)
     element.onclick = () => {
